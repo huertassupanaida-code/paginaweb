@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto - SWEET FRiTES</title>
+    <meta name="description" content="Detalles de nuestro delicioso snack en SWEET FRiTES.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">SWEET FRiTES</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <a href="index.html#inicio" class="nav__link">Inicio</a>
+                <a href="index.html#nosotros" class="nav__link">Nosotros</a>
+                <a href="index.html#tienda" class="nav__link active">Tienda</a>
+                <a href="index.html#contacto" class="nav__link">Contacto</a>
+            </div>
+
+            <div class="nav__social">
+                <a href="https://www.instagram.com/sweet_frite?igsh=bzZwY3d6enV0NjFn&utm_source=qr" target="_blank"
+                    aria-label="Instagram" class="nav__social-ig"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@sweet.frites?_r=1&_t=ZS-95d2mai1goP" target="_blank"
+                    aria-label="TikTok" class="nav__social-tt"><i class="fab fa-tiktok"></i></a>
+            </div>
+
+            <i class="fas fa-bars nav__toggle" id="nav-toggle"></i>
+        </nav>
+    </header>
+
+    <main style="padding-top: 120px; padding-bottom: 60px;">
+        <div class="container">
+            <a href="index.html#tienda" class="btn btn-secondary"
+                style="margin-bottom: 2rem; display: inline-flex; align-items: center; gap: 8px; padding: 0.8rem 1.5rem;">
+                <i class="fas fa-arrow-left"></i> Volver a la tienda
+            </a>
+
+            <div class="product-detail">
+                <div class="product-detail__image">
+                    <img id="detail-img" src="assets/combo1.jpg" alt="Producto">
+                </div>
+                <div class="product-detail__info">
+                    <div class="product__badge" id="detail-badge"
+                        style="position:relative; display:inline-block; top:0; left:0; margin-bottom:1rem; margin-top:0;">
+                        SWEET FRiTES</div>
+                    <h1 id="detail-title">Cargando...</h1>
+                    <p class="product-detail__price" id="detail-price">...</p>
+                    <p class="product-detail__desc" id="detail-desc">Preparando la información de este increíble snack.
+                        Nuestras papas dulces te encantarán, hechas con la mejor calidad y mucho amor.</p>
+
+                    <div id="detail-options" class="product-options-container"></div>
+
+                    <div class="product-detail__actions">
+                        <div class="quantity-selector">
+                            <button
+                                onclick="let q = document.getElementById('qty'); q.value = Math.max(1, parseInt(q.value) - 1); if(window.updateLivePriceFromButtons) window.updateLivePriceFromButtons();">-</button>
+                            <input type="number" id="qty" value="1" min="1">
+                            <button
+                                onclick="let q = document.getElementById('qty'); q.value = parseInt(q.value) + 1; if(window.updateLivePriceFromButtons) window.updateLivePriceFromButtons();">+</button>
+                        </div>
+                        <a href="https://wa.me/51931788231" id="whatsapp-buy-btn" target="_blank"
+                            class="btn btn-primary" style="display:flex; align-items:center; gap:10px;">
+                            <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Pedir por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <a href="index.html" class="footer__logo">SWEET FRiTES</a>
+                    <p class="footer__desc">"Donde las papas se vuelven postres". Snack innovador con sabores dulces y
+                        salados, diseñado para sorprenderte.</p>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Menú</h4>
+                    <ul class="footer__links-list">
+                        <li><a href="index.html#inicio"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                        <li><a href="index.html#tienda"><i class="fas fa-chevron-right"></i> Tienda</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Contáctanos</h4>
+                    <ul class="footer__contact-info">
+                        <li><i class="fas fa-phone-alt"></i> +51 931 788 231</li>
+                        <li><i class="fas fa-envelope"></i> hola@sweetfrites.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 SWEET FRiTES.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/51931788231" target="_blank" class="whatsapp-float" aria-label="Escribir por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
