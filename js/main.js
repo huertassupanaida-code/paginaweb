@@ -144,7 +144,7 @@ if(modalCloseBtn) {
 const productosData = {
     'ind1': {
         title: 'Individual',
-        basePrice: 5.00,
+        basePrice: 5.99,
         img: 'assets/individual1.png',
         desc: '',
         badge: 'NUEVO',
@@ -173,8 +173,8 @@ const productosData = {
     },
     'ind2': {
         title: 'Arma tu combo',
-        basePrice: 15.00,
-        img: 'assets/armatucombo.jpeg',
+        basePrice: 5.99,
+        img: 'assets/armatucomboac.png',
         desc: '',
         badge: 'SWEET FRiTES',
         options: [
@@ -227,7 +227,7 @@ const productosData = {
     'com2': {
         title: 'Combo 2',
         basePrice: 10.00,
-        img: 'assets/combo2.png',
+        img: 'assets/combo2ac.png',
         desc: '',
         badge: 'SWEET FRiTES',
         options: [
